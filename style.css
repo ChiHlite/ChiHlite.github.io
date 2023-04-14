@@ -104,6 +104,40 @@ body {
   width: 100%;
 }
 
+/*.main-container .btnlogin-menu {
+  display: inline-block;
+  text-decoration: none; /*跟文字底線說掰掰
+  width: 100px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+/*.main-container .btnlogin-menu span {
+ background: #ffffff;
+ height: 100%;
+ width: 0%;
+ border-radius: 6px;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ z-index: -1;
+ transition: 0.5s;
+}
+.main-container .btnlogin-menu:hover span{
+  width: 100%;
+ }
+.main-container .btnlogin-menuhover{
+   border: none;
+ }
+*/
 .main-container .hero-section {
   position: relative;
   z-index: 2;
