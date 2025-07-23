@@ -1,9 +1,9 @@
 let audio = null;
 
-// 全局缓存配置数据
+// 全局緩存配置數據
 let cachedConfig = null;
 
-// 加载配置文件的函数
+// 加載配置文件的函數
 const loadConfig = () => {
     if (cachedConfig) {
         return Promise.resolve(cachedConfig);
@@ -16,7 +16,7 @@ const loadConfig = () => {
         });
 };
 
-// DOMContentLoaded 事件处理
+// DOMContentLoaded 事件處理
 document.addEventListener('DOMContentLoaded', () => {
     audio = new Audio('music/bgMusic.mp3');
     audio.preload = 'auto';
@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 500);
 });
 
-// 检查日期并跳转
+// 檢查日期並跳轉
 loadConfig().then((data) => {
     if (new Date(data.date) - new Date() > 20000) {
         window.location.href = './index.html';
     }
 });
 
-// 将数据插入页面
+// 將數據插入頁面
 const fetchData = () => {
     loadConfig().then((data) => {
         Object.keys(data).forEach((key) => {
@@ -53,7 +53,7 @@ const fetchData = () => {
     });
 };
 
-// 动画时间轴
+// 動畫時間軸
 const animationTimeline = () => {
     const textBoxChars = document.getElementsByClassName('hbd-chatbox')[0];
     const hbd = document.getElementsByClassName('wish-hbd')[0];
@@ -317,19 +317,19 @@ const animationTimeline = () => {
             '+=1'
         );
 
-    // 添加按钮事件
+    // 添加按鈕事件
     loadConfig()
         .then((config) => {
-            const expressUrl = config.expressUrl; // 获取 expressUrl
+            const expressUrl = config.expressUrl; // 獲取 expressUrl
             const replyBtn = document.getElementById('replay');
             replyBtn.addEventListener('click', () => {
                 window.open(expressUrl);
             });
         })
         .catch((error) => {
-            console.error('读取配置时发生错误:', error);
+            console.error('讀取配置時發生錯誤:', error);
         });
 };
 
-// 执行 fetch 和动画初始化
+// 執行 fetch 和動畫初始化
 fetchData();
