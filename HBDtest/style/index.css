@@ -73,7 +73,7 @@ body {
     top: calc(-200% - 4px);
 }
 
-/* 顶部文字*/
+/* 頂部文字*/
 .info .time .title {
     font-family: 'Microsoft YaHei';
     color: white;
@@ -99,7 +99,7 @@ body {
     height: 80%;
 }
 
-/* 倒计时字体 */
+/* 倒計時字體 */
 .info .time .time-box div p {
     font-family: 'Microsoft YaHei';
     color: white;
