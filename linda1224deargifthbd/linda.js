@@ -1,7 +1,7 @@
 // 信件的開頭語
 const contentLetterSrart_actived = "Hello，我的小寶貝喔。哥哥是你那隻臭熊貓呢。嘻嘻，這是哥哥做給寶貝的哦。"
 // 打開信件的內容
-const mainContentLetter = "今天是你特別的一天，我想趁這個機會，送上我最真摯的祝福。你的笑容總能讓人感到溫暖，你的存在就像陽光，照亮了我每一天。希望新的一歲能帶給你更多的快樂、健康和成長。不論未來走到哪裡，我都希望你能一直保持初心，勇敢追夢。再次祝你生日快樂，Annie 🎂✨永遠支持你的人在這裡～"
+const mainContentLetter = "今天是你特別的一天，我想趁這個機會，送上我最真摯的祝福。你的笑容總能讓人感到溫暖，你的存在就像陽光，照亮了我每一天。希望新的一歲能帶給你更多的快樂、健康和成長。不論未來走到哪裡，我都希望你能一直保持初心，勇敢追夢。再次祝你生日快樂，linda 🎂✨永遠支持你的人在這裡～"
 
 // 這是一張圖片的連結
 let imgStart = document.querySelector(".myAI"); //用來搭配信件的圖片
@@ -13,7 +13,7 @@ imgLetter.src = "./img/ava-panda.png"; //用來搭配信件內容得圖片
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
-document.querySelector(".sticker").addEventListener("click", function () { //Hiệu ứng gõ chữ cho phần mở đầu của bức thư
+document.querySelector(".sticker").addEventListener("click", function () { //模擬「打字機打字效果」
     document.querySelector(".contentLetter").innerHTML = "";
     document.querySelector(".startLetter").classList.add("active")
     setTimeout(() => {
@@ -30,7 +30,7 @@ document.querySelector(".sticker").addEventListener("click", function () { //Hi�
     }, 1000)
 })
 
-document.querySelector("#mess").addEventListener("change", function () { //Hiệu ứng gõ chữ cho phần nội dung của bức thư
+document.querySelector("#mess").addEventListener("change", function () { //模擬「打字機打字效果」
     if (this.checked == true) {
         document.querySelector(".content").classList.add("actived")
         const splitMainContentLetter = mainContentLetter.split("");
@@ -69,8 +69,8 @@ document.querySelector(".recieve").addEventListener("click", () => {
     }, 500)
 })
 
-// Animation Drop light _ Tạo hiệu ứng kim tuyến rơi
-//Bạn có thể thiết kế lại để trông chân thật hơn nhé, thiết kế của mình hơi bị cứng và thiếu sự tự nhiên
+// Animation Drop light _ 「金色亮粉飄落」的視覺效果
+//讓我們讓金色亮粉掉落的動畫看起來更自然、更夢幻，使用柔和的縮放、隨機旋轉和不同透明度來模擬更真實的飄落效果
 const getBackground = document.querySelector(".backgroundParty");
 var width = getBackground.offsetWidth;
 var height = getBackground.offsetHeight;
