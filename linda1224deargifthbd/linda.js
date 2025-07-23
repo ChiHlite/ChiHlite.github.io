@@ -1,13 +1,15 @@
-const contentLetterSrart_actived = "Hello em pé của anh nhóooo. Anh nà Panda thúi cụa em nah. Hí hí cóa cái nì anh nàm cho babi nah." //Lời mở đầu cho bức thư
-const mainContentLetter = "Công túa này hôm nay lại thêm một tuổi mới rồi. Tủi mới em pé hỏng cóa báo nữa nhóoooo. Happy Birthday Annie. Eooooo em nhắm. Mãi keoooo mãi mậnnnn." //Nội dung của bức thư
+// 信件的開頭語
+const contentLetterSrart_actived = "Hello，我的小寶貝喔。哥哥是你那隻臭熊貓呢。嘻嘻，這是哥哥做給寶貝的哦。"
+// 打開信件的內容
+const mainContentLetter = "今天是你特別的一天，我想趁這個機會，送上我最真摯的祝福。你的笑容總能讓人感到溫暖，你的存在就像陽光，照亮了我每一天。希望新的一歲能帶給你更多的快樂、健康和成長。不論未來走到哪裡，我都希望你能一直保持初心，勇敢追夢。再次祝你生日快樂，Annie 🎂✨永遠支持你的人在這裡～"
 
-// Gắn 1 đường link ảnh bất kì
-let imgStart = document.querySelector(".myAI"); //Hình ảnh xuất hiện trong lời mở đầu của bức thư
+// 這是一張圖片的連結
+let imgStart = document.querySelector(".myAI"); //用來搭配信件的圖片
 imgStart.src = "./img/cute-panda.png";
 
-// Gắn 1 link ảnh bất kì
+// 這是一張圖片的連結
 let imgLetter = document.querySelector(".img");
-imgLetter.src = "./img/ava-panda.png"; //Hình ảnh xuất hiện trong nội dung của bức thư sau khi bức thư được viết ra hết
+imgLetter.src = "./img/ava-panda.png"; //用來搭配信件內容得圖片
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
