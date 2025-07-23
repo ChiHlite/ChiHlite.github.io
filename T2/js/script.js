@@ -1,6 +1,6 @@
 // 全局變量
-const BIRTHDAY_MONTH = 6; // JavaScript中月份從0開始，所以7月是6
-const BIRTHDAY_DAY = 23; // 生日是7月23日
+const BIRTHDAY_MONTH = 11; // JavaScript中月份從0開始，所以7月是6
+const BIRTHDAY_DAY = 24; // 生日是7月23日
 const CELEBRATION_DAYS = 3; // 生日慶祝持續3天
 
 // DOM元素
